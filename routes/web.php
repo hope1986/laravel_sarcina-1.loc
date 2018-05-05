@@ -14,5 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('country', 'CountriesController@index');
-Route::get('city', 'CitiesController@index');
+Route::resource('country','CountrysController');
+
+
